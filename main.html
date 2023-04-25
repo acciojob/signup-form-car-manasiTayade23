@@ -11,56 +11,56 @@
     <script type="text/javascript" src="./script.js">
 </script>
 <form method="post">
-  <lable for="name" >Name</lable>
+  <lable for="name" >Name*</lable>
 	<br>
-    <input type="text" id="#name"  placeholder="Name" required>
+    <input type="text" id="name"  placeholder="Name" required>
     <br>
-    <lable for="email">Email</lable>
+    <lable for="email">Email*</lable>
 	<br>
     <input type="email" id="email"  placeholder="Email" required>
     <br>
-    <lable for="gender">Gender</lable>
+    <lable for="gender">Gender*</lable>
 	<br>
-    <input type="radio" id="#gender" required>
-    <lable for="gender_m" name="gender">Male</lable>
-    <input type="radio" >
-    <lable for="gender_f" name="gender">Female</lable>
+    <label for="gender">Gender*</label>
+	<input type="radio" id="gender_m" name="gender" required>
+	<label for="gender_m">Male</label>
+	<input type="radio" id="gender_f" name="gender" required>
+	<label for="gender_f">Female</label>
     <br>
-    <lable for="cars">Car Brands</lable>
+    <lable for="cars">Car Brands*</lable>
 	<br>
     <select name="cars" id="cars" required>
-    <option value ="choose">--Choose an Option--</option>
+    <option value ="" disabled selected>--Choose an Option--</option>
     <option value="bmw">BMW</option>
     <option value="audi">Audi</option>
     <option value="mercedez">Mercedez</option>
   </select>
   <br>
-    <lable for="age">Age</lable>
+    <lable for="age">Age*</lable>
 	<br>
-    <input type="number" id="#age"  placeholder="Age" required>
+    <input type="number" id="age"  placeholder="Age" required>
     <br>
-    <lable for="dob">DOB</lable>
+    <lable for="dob">DOB*</lable>
 	<br>
-    <input type="date" id="#dob" required>
+    <input type="date" id="dob" required>
     <br>
     <lable for="tel">Phone Number</lable>
 	<br>
     <input type="tel" id="tel" placeholder="xxx-xxx-xxxx" >
     <br>
-    <lable for="password">Password</lable>
+    <lable for="password">Password*</lable>
 	<br>
-    <input type="password" id="#password" placeholder="Password" required>
+    <input type="password" id="password" placeholder="Password" required>
     <br>
-    <lable for="tos">I agree to the TOS</lable>
+    <lable for="checkbox">Checkbox*</lable>
 	<br>
-    
-    <lable for="yes">Yes</lable>
-    <input type="checkbox" id="#tos">
-    <label for="no">No</label>
-    <input type="checkbox" id="#tos">
+     <input type="checkbox" id="tos">
+    <lable for="yes">I agree to the TOS</lable>
+   
+  
     <br>
     
-    <input type="submit">
+    <button type=submit>submit</button>
 
     </form>
 </body>
